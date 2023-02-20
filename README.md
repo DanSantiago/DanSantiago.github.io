@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/75077046/220214232-19063c83-8162-4a63-
 
 # Como executar o projeto
 
-Basta baixar o arquivo compactado e rodar o arquivo "run.py", após isso, basta entrar no link que ele retornará.
+Basta baixar o arquivo compactado ("portfolio.zip") e rodar o arquivo "run.py", após isso, basta entrar no link que ele retornará.
 
 OBS: É necessário ter uma versão do Python instalada para a execução funcionar.
 OBS2: É necessário instalar os módulos utilizados antes de executar o algoritmo.
