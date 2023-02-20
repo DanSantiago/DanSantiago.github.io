@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang = "pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Experiência</title>
+  <link rel="stylesheet" media="screen" href="static/css/style.css">
+</head>
+<body>
+
+<!-- particles.js container -->
+<div id="particles-js">
+  <h2>
+	  <a href="http://127.0.0.1:5000">
+		<button type="button" class="botão">
+			<p class="link">
+				Sobre mim
+			</p>
+		</button>
+	  </a>
+	  <a href="http://127.0.0.1:5000/projetos">
+		<button type="button" class="botão">
+			<p class="link">
+				Projetos
+			</p>
+		</button>
+	  </a>
+   </h2>
+   <h3>	
+		<button type="button" class="collapsible">Programação</button>
+		<div class="content">
+			<div class="img-text-container">
+				<img src="static/imagens/estru.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Estrutura de dados
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="static/imagens/c.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Linguagem c
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="static/imagens/c++.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Linguagem c++
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="static/imagens/python.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Linguagem python
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="static/imagens/fortran.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Linguagem fortran
+				</p>
+			</div>	
+			
+		</div>
+		<button type="button" class="collapsible">Desenvolvimento de software</button>
+		<div class="content">
+			<div class="img-text-container">
+				<img src="static/imagens/sql.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					SQL
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="static/imagens/python.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Uso de módulos para desenvolvimento de aplicações
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="static/imagens/lite.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					SQLite
+				</p>
+			</div>	
+		</div>  
+		<button type="button" class="collapsible">Análise de dados</button>
+		<div class="content">
+			<div class="img-text-container">
+				<img src="static/imagens/numericos.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Métodos numéricos
+				</p>
+			</div>
+			<div class="img-text-container">
+				<img src="static/imagens/analise.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Análise de dados
+				</p>
+			</div>
+			<div class="img-text-container">
+				<img src="static/imagens/mani.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Manipulação de dados
+				</p>
+			</div>			
+		</div>  
+		<button type="button" class="collapsible">Outras ferramentas</button>
+		<div class="content">
+			<div class="img-text-container">
+				<img src="static/imagens/latex.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					LaTeX
+				</p>
+			</div>
+			<div class="img-text-container">
+				<img src="static/imagens/git.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Git e GitHub
+				</p>
+			</div>
+			<div class="img-text-container">
+				<img src="static/imagens/gnu.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Gnuplot 
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="static/imagens/shell.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Shell 
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="static/imagens/linux.png" alt="Descrição da imagem" widht=50px height=50px>
+				<p class="exp">
+					Linux 
+				</p>
+			</div>				
+		</div>  
+	</h3>
+</div>
+
+<!-- scripts -->
+<script src="static/js/particles.js"></script>
+<script src="static/js/app.js"></script>
+<script>
+    particlesJS.load("particles-js", "{{ url_for('static', filename='particles.json') }}",
+    function(){
+    console.log("particles.json has loaded");
+});
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
