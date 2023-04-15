@@ -4,7 +4,7 @@
 
 # Sobre o projeto
 
-O projeto foi desenvolvido para fins de treinamento com o módulo flask do Python.
+O projeto foi desenvolvido para fins de treinamento inicial com o módulo flask do Python e obtenção de conhecimentos básicos sobre programação web.
 
 
 ## Demonstração Layout - Atual 
