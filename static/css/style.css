@@ -110,7 +110,7 @@ canvas{
 
 /* mudanças nos parágrafos*/
 p {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .exp {
@@ -128,7 +128,7 @@ p {
 }
 
 /* detalhes dos botões*/
-.botão {
+.guia {
   background-color:transparent;
   border: none;
   color: white;
@@ -142,7 +142,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-185%, 230%); 
+  transform: translate(-185%, 384%); 
 }
 
 .bot2 {
@@ -151,7 +151,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-45%, 226%); 
+  transform: translate(-45%, 376%); 
 }
 
 .bot3 {
@@ -160,91 +160,18 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(85%, 202%); 
-}
-
-.bot6 {
-  width: 2.5%;
-  height: 5%;
-  position: fixed;
-  bottom: 560px;
-  right: 930px; 
-}
-
-.bot7 {
-  width: 2.5%;
-  height: 5%;
-  position: fixed;
-  bottom: 470px;
-  right: 930px; 
-}
-
-.bot8 {
-  width: 2.5%;
-  height: 5%;
-  position: fixed;
-  bottom: 380px;
-  right: 930px; 
-}
-
-.bot9 {
-  width: 2.5%;
-  height: 5%;
-  position: fixed;
-  bottom: 530px;
-  right: 930px; 
-}
-
-.bot10 {
-  width: 2.5%;
-  height: 5%;
-  position: fixed;
-  bottom: 420px;
-  right: 930px;
-}
-
-.bot11 {
-  width: 2.5%;
-  height: 5%;
-  position: fixed;
-  bottom: 300px;
-  right: 930px;
-}
-
-.bot12 {
-  width: 2.5%;
-  height: 5%;
-  position: fixed;
-  bottom: 200px;
-  right: 930px;
-}
-
-.bot13 {
-  width: 2.5%;
-  height: 3%;
-  position: fixed;
-  bottom: 170px;
-  right: 930px;
-}
-
-
-.bot14 {
-  width: 2.5%;
-  height: 5%;
-  position: fixed;
-  bottom: 25px;
-  right: 930px; 
+  transform: translate(85%, 338%); 
 }
 
 /* divisões dos botões de alternância de página*/
 h1 {
   backgroud: transparent;
-  transform: translate(85%, 20%); 
+  transform: translate(1%, 35%); 
 }
 
 h2 {
   backgroud: transparent;
-  transform: translate(85%, 55%); 
+  transform: translate(1%, 55%); 
 }
 
 h3 {
@@ -270,7 +197,7 @@ h3 {
 /* mensagens no rodapé*/
 .rodape {
   color: white;
-  transform: translate(1%, 6700%);    
+  transform: translate(0.5%, 5900%);    
 }
 
 /* paineis de expansão */
@@ -311,5 +238,11 @@ h3 {
 /* definições dos videos */
 .video-wrapper {
   width: 640px; /* ajuste a largura conforme necessário */
+  margin: 20px auto; /* define a margem superior e inferior como 20px e a margem esquerda e direita como "auto" para centralizar */
+}
+
+.img-center {
+  width: 681px; /* ajuste a largura conforme necessário */
+  display: block;
   margin: 20px auto; /* define a margem superior e inferior como 20px e a margem esquerda e direita como "auto" para centralizar */
 }
