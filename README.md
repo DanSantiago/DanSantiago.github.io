@@ -9,8 +9,7 @@ O projeto foi desenvolvido para fins de treinamento com o módulo flask do Pytho
 
 ## Demonstração Layout - Atual 
 
-https://user-images.githubusercontent.com/75077046/220214232-19063c83-8162-4a63-af6a-a7ebaedafc6a.mp4
-
+https://user-images.githubusercontent.com/75077046/232230578-14d17fc7-c104-44cc-bb35-4454f2396281.mp4
 
 # Tecnologias utilizadas
 - Python
