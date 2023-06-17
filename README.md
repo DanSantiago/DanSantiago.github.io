@@ -6,11 +6,6 @@
 
 O projeto foi desenvolvido para fins de treinamento inicial com o módulo flask do Python e obtenção de conhecimentos básicos sobre programação web.
 
-
-## Demonstração Layout - Atual 
-
-https://user-images.githubusercontent.com/75077046/232230578-14d17fc7-c104-44cc-bb35-4454f2396281.mp4
-
 # Tecnologias utilizadas
 - Python
 
