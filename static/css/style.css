@@ -92,25 +92,24 @@ canvas{
   font-family: Arial;
   font-size: 20pt;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, +30%);
+  width: 100%;
+  height: 100%;
+  top: 52.5%;
   text-align: center;  
  }
 
 /* foto de perfil */ 
 #perfil {
-  width: 15%;
-  height: 40%;
+  width: 20%;
+  height: 30%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -75%);  
+  top: 20%;
+  left: 40%;
  }
 
 /* mudanças nos parágrafos*/
 p {
-  margin-bottom: 40px;
+  margin-bottom: 2%;
 }
 
 .exp {
@@ -138,44 +137,43 @@ p {
 
 .bot1 {
   width: 4%;
-  height: 8%;
+  height: 6%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-185%, 384%); 
+  top: 70%;
+  left: 43%;
 }
 
 .bot2 {
-  width: 4.1%;
-  height: 8.2%;
+  width: 4%;
+  height: 6%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-45%, 376%); 
+  top: 70%;
+  left: 48%;
 }
 
 .bot3 {
-  width: 4.5%;
-  height: 9%;
+  width: 4%;
+  height: 6%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(85%, 338%); 
+  top: 70%;
+  left: 53%;
 }
 
 /* divisões dos botões de alternância de página*/
 h1 {
-  backgroud: transparent;
-  transform: translate(1%, 55%); 
+  background: transparent;
+  position: absolute;
+  top: 2%;
+  left: 2%;
 }
 
 h2 {
-  backgroud: transparent;
+  background: transparent;
   transform: translate(1%, 55%); 
 }
 
 h3 {
-  backgroud: transparent;
+  background: transparent;
   transform: translate(0%, 5%); 
 }
 
@@ -197,7 +195,9 @@ h3 {
 /* mensagens no rodapé*/
 .rodape {
   color: white;
-  transform: translate(0.5%, 5900%);    
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
 }
 
 /* paineis de expansão */
@@ -245,4 +245,59 @@ h3 {
   width: 681px; /* ajuste a largura conforme necessário */
   display: block;
   margin: 20px auto; /* define a margem superior e inferior como 20px e a margem esquerda e direita como "auto" para centralizar */
+}
+
+/* resize */
+@media screen and (max-width: 920px) {
+  #basico {
+    font-size: 15px;
+  }
+
+  .guia {
+    font-size: 15px;
+  }
+
+  .bot1 {
+    top: 63%;
+  }
+
+  .bot2 {
+    top: 63%;
+  }
+
+  .bot3 {
+    top: 63%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #basico {
+    font-size: 12px;
+  }
+
+  .guia {
+    font-size: 12px;
+  }
+
+  .bot1 {
+    top: 62%;
+  }
+
+  .bot2 {
+    top: 62%;
+  }
+
+  .bot3 {
+    top: 62%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #basico {
+    font-size: 10px;
+  }
+
+  .guia {
+    font-size: 10px;
+  }
+  
 }
