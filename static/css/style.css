@@ -100,11 +100,11 @@ canvas{
 
 /* foto de perfil */ 
 #perfil {
-  width: 20%;
+  width: 15%;
   height: 30%;
   position: absolute;
   top: 20%;
-  left: 40%;
+  left: 42.5%;
  }
 
 /* mudanças nos parágrafos*/
@@ -137,26 +137,26 @@ p {
 
 .bot1 {
   width: 4%;
-  height: 6%;
+  height: 8%;
   position: absolute;
-  top: 70%;
-  left: 43%;
+  top: 72%;
+  left: 42.75%;
 }
 
 .bot2 {
   width: 4%;
-  height: 6%;
+  height: 8%;
   position: absolute;
-  top: 70%;
-  left: 48%;
+  top: 72%;
+  left: 47.75%;
 }
 
 .bot3 {
   width: 4%;
-  height: 6%;
+  height: 8%;
   position: absolute;
-  top: 70%;
-  left: 53%;
+  top: 72%;
+  left: 52.75%;
 }
 
 /* divisões dos botões de alternância de página*/
@@ -169,12 +169,18 @@ h1 {
 
 h2 {
   background: transparent;
-  transform: translate(1%, 55%); 
+  position: absolute;
+  top: 2%;
+  left: 2%;
 }
 
 h3 {
   background: transparent;
-  transform: translate(0%, 5%); 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 8%;
+  left: 2%;
 }
 
 /* animação dos botões de alternância de página*/
@@ -237,14 +243,20 @@ h3 {
 
 /* definições dos videos */
 .video-wrapper {
-  width: 640px; /* ajuste a largura conforme necessário */
-  margin: 20px auto; /* define a margem superior e inferior como 20px e a margem esquerda e direita como "auto" para centralizar */
+  width: 60%;
+  height: 40%;
+  margin: 20px auto; 
 }
 
 .img-center {
-  width: 681px; /* ajuste a largura conforme necessário */
-  display: block;
-  margin: 20px auto; /* define a margem superior e inferior como 20px e a margem esquerda e direita como "auto" para centralizar */
+  width: 60%;
+  height: 40%; 
+  margin: 20px auto; 
+}
+
+.logos {
+  width: 45px;
+  height: 45px;
 }
 
 /* resize */
@@ -256,17 +268,38 @@ h3 {
   .guia {
     font-size: 15px;
   }
+  
+  .collapsible {
+    font-size: 15px;
+  }
+
+  .sub {
+    font-size: 14px;
+  }
+
+  .exp {
+    font-size: 12px;
+  }
+
+  .rodape {
+    font-size: 8px;
+  }
 
   .bot1 {
-    top: 63%;
+    top: 64%;
   }
 
   .bot2 {
-    top: 63%;
+    top: 64%;
   }
 
   .bot3 {
-    top: 63%;
+    top: 64%;
+  }
+
+  .logos {
+    width: 40px;
+    height: 40px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -278,16 +311,37 @@ h3 {
     font-size: 12px;
   }
 
+  .collapsible {
+    font-size: 12px;
+  }
+ 
+  .sub {
+    font-size: 11px;
+  }
+
+  .exp {
+    font-size: 10px;
+  }
+
+  .rodape {
+    font-size: 6px;
+  }
+
   .bot1 {
-    top: 62%;
+    top: 63%;
   }
 
   .bot2 {
-    top: 62%;
+    top: 63%;
   }
 
   .bot3 {
-    top: 62%;
+    top: 63%;
+  }
+
+  .logos {
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -299,5 +353,60 @@ h3 {
   .guia {
     font-size: 10px;
   }
+
+  .collapsible {
+    font-size: 10px;
+  }
+
+  .sub {
+    font-size: 9px;
+  }
   
+  .exp {
+    font-size: 8px;
+  }
+
+  .rodape {
+    font-size: 5px;
+  }
+
+  .logos {
+    width: 30px;
+    height: 30px;
+  }
+
 }
+
+@media screen and (max-width: 350px) {
+  #basico {
+    font-size: 8px;
+  }
+
+  .guia {
+    font-size: 8px;
+  }
+
+  .collapsible {
+    font-size: 8px;
+  }
+
+  .sub {
+    font-size: 7px;
+  }
+  
+  .exp {
+    font-size: 6px;
+  }
+
+  .rodape {
+    font-size: 4px;
+  }
+
+  .logos {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+
