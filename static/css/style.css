@@ -1,1 +1,398 @@
+/* definições da página*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#201c1c;
+}
+
+div.wrap {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  overflow: hidden;
+}
+
+/* texto central da página inicial*/
+#basico {
+  color: white;
+  font-size: 20pt;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 52.5%;
+  text-align: center;  
+ }
+
+/* foto da página inicial */ 
+#perfil {
+  width: 15%;
+  height: 30%;
+  position: absolute;
+  top: 20%;
+  left: 42.5%;
+ }
+
+/* mudanças nos parágrafos*/
+p {
+  margin-bottom: 2%;
+}
+
+/* texto das listas */
+.exp {
+  color: white;
+  font-size: 12pt;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sub {
+  color: white;
+  font-size: 15pt;
+  margin-bottom: 10px;
+  text-align: center;  
+}
+
+/* detalhes da guia superior */
+.guia {
+  background-color:transparent;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  border: none;
+  color: white;
+  font-size: 15pt;
+  border-left: 4px;
+  transition: .4s;
+}
+
+/* animação da guia */
+.guia:hover{
+  padding-left: 30px;
+  border-left: 4px solid gray;
+  color: gray;
+}
+
+/* detalhes dos botões da tela inicial */
+.bot {
+  width: 4%;
+  height: 8%;
+  position: absolute;
+  top: 72%;
+  opacity: 0.7;
+}
+
+/* animação dos botões */
+.bot:hover{
+  width: 4.5%;
+  height: 8.5%;
+  opacity: 1;
+}
+
+#bot1 {
+  left: 42.75%;
+}
+
+#bot2 {
+  left: 47.75%;
+}
+
+#bot3 {
+  left: 52.75%;
+}
+
+/* divisões dos botões de alternância de página*/
+h1 {
+  background: transparent;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+h3 {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 8%;
+  left: 2%;
+}
+
+/* paineis de expansão */
+.collapsible {
+  background-color: #2A2929;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+}
+
+.active, .collapsible:hover {
+  background-color: #373434;
+}
+
+.content {
+  padding: 0 60px;
+  display: block;
+  overflow: hidden;
+  background-color: #2A2929;
+}
+
+/* imagem ao lado de texto */
+.img-text-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.img-text-container img {
+  margin-right: 20px;
+}
+
+/* definições dos videos */
+.video-wrapper {
+  width: 60%;
+  height: 40%;
+  margin: 20px auto; 
+}
+
+.img-center {
+  width: 60%;
+  height: 40%; 
+  margin: 20px auto; 
+}
+
+.logos {
+  width: 45px;
+  height: 45px;
+}
+
+/* corrigir layout para diferentes dimensões */
+@media screen and (max-width: 1800px) {
+  #perfil {
+  width: 20%;
+  left: 40%;
+ }
+
+ .bot {
+  top: 69%;
+}
+
+#bot1 {
+  left: 41.75%;
+}
+
+#bot3 {
+  left: 53.75%;
+}
+}
+
+@media screen and (max-width: 1250px) {
+  #perfil {
+    width: 25%;
+    left: 37.5%;
+   }
+
+  .bot {
+    top: 66%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #basico {
+    font-size: 17px;
+  }
+
+  .guia {
+    font-size: 17px;
+  }
+  
+  .collapsible {
+    font-size: 17px;
+    padding: 13px;
+  }
+
+  .sub {
+    font-size: 16px;
+  }
+
+  .exp {
+    font-size: 14px;
+  }
+
+  .bot {
+    top: 61%;
+    height: 6%;
+  }
+  
+  .bot:hover{
+    height: 6.5%;
+  }
+
+  .logos {
+    width: 40px;
+    height: 40px;
+  }
+
+#perfil {
+  width: 30%;
+  height: 20%;
+  top: 30%;
+  left: 35%;
+ }
+}
+
+@media screen and (max-width: 768px) {
+  #basico {
+    font-size: 14px;
+  }
+
+  .guia {
+    font-size: 14px;
+  }
+
+  .collapsible {
+    font-size: 14px;
+    padding: 10px;
+  }
+ 
+  .sub {
+    font-size: 13px;
+  }
+
+  .exp {
+    font-size: 12px;
+  }
+
+  .bot {
+    top: 60%;
+    height: 5%;
+  }
+
+  .bot:hover{
+    height: 5.5%;
+  }
+
+  .logos {
+    width: 35px;
+    height: 35px;
+  }
+
+#perfil {
+  width: 35%;
+  left: 32.5%;
+ }
+
+}
+
+@media screen and (max-width: 500px) {
+  #basico {
+    font-size: 12px;
+  }
+
+  .guia {
+    font-size: 12px;
+  }
+
+  .collapsible {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .sub {
+    font-size: 11px;
+  }
+
+  .bot {
+    top: 60%;
+  }
+  
+  .exp {
+    font-size: 10px;
+  }
+
+  .logos {
+    width: 30px;
+    height: 30px;
+  }
+
+#perfil {
+  width: 30%;
+  left: 35%;
+ }
+
+}
+
+@media screen and (max-width: 350px) {
+  #basico {
+    font-size: 8px;
+  }
+
+  .guia {
+    font-size: 8px;
+  }
+
+  .bot {
+    top: 57%;
+    height: 4%;
+  }
+
+  .bot:hover {
+    height: 4.5%;
+  }
+
+  .collapsible {
+    font-size: 8px;
+    padding: 4px;
+  }
+
+  .sub {
+    font-size: 7px;
+  }
+
+  .exp {
+    font-size: 6px;
+  }
+
+  .logos {
+    width: 25px;
+    height: 25px;
+  }
+
+#perfil {
+  height: 15%;
+  top: 35%
+ }
+
+#bot1 {
+  left: 40.75%;
+}
+
+#bot3 {
+  left: 54.75%;
+}
+}
+}
+
+
 
