@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang = "pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experiência</title>
+  <link rel="stylesheet" media="screen" href="../static/css/style.css">
+</head>
+<body>
+
+<div>
+  <h1>
+	  <a href="home.html">
+		<button type="button" class="guia">
+			<p>
+				Sobre mim
+			</p>
+		</button>
+	  </a>
+	  <a href="proj.html">
+		<button type="button" class="guia">
+			<p>
+				Projetos
+			</p>
+		</button>
+	  </a>
+   </h1>
+   <h3>	
+		<button type="button" class="collapsible">Programação</button>
+		<div class="content">
+			<div class="img-text-container">
+				<img src="../static/imagens/estru.png" alt="Simbolo ED" class="logos">
+				<p class="exp">
+					Estrutura de dados
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="../static/imagens/c.png" alt="Simbolo C" class="logos">
+				<p class="exp">
+					Linguagem c
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="../static/imagens/c++.png" alt="Simbolo C++" class="logos">
+				<p class="exp">
+					Linguagem c++
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="../static/imagens/python.png" alt="Simbolo Python" class="logos">
+				<p class="exp">
+					Linguagem python
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="../static/imagens/fortran.png" alt="Simbolo Fortran" class="logos">
+				<p class="exp">
+					Linguagem fortran
+				</p>
+			</div>	
+			
+		</div>
+		<button type="button" class="collapsible">Desenvolvimento de software</button>
+		<div class="content">
+			<div class="img-text-container">
+				<img src="../static/imagens/sql.png" alt="Simbolo SQL" class="logos">
+				<p class="exp">
+					SQL
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="../static/imagens/python.png" alt="Simbolo Python" class="logos">
+				<p class="exp">
+					Uso de módulos para desenvolvimento de aplicações
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="../static/imagens/lite.png" alt="Simbolo SQLite" class="logos">
+				<p class="exp">
+					SQLite
+				</p>
+			</div>	
+		</div>  
+		<button type="button" class="collapsible">Análise de dados</button>
+		<div class="content">
+			<div class="img-text-container">
+				<img src="../static/imagens/numericos.png" alt="Simbolo metodos" class="logos">
+				<p class="exp">
+					Métodos numéricos
+				</p>
+			</div>
+			<div class="img-text-container">
+				<img src="../static/imagens/analise.png" alt="Simbolo analise" class="logos">
+				<p class="exp">
+					Análise de dados
+				</p>
+			</div>
+			<div class="img-text-container">
+				<img src="../static/imagens/mani.png" alt="Simbolo manipulação" class="logos">
+				<p class="exp">
+					Manipulação de dados
+				</p>
+			</div>			
+		</div>  
+		<button type="button" class="collapsible">Outras ferramentas</button>
+		<div class="content">
+			<div class="img-text-container">
+				<img src="../static/imagens/latex.png" alt="Simbolo LaTeX" class="logos">
+				<p class="exp">
+					LaTeX
+				</p>
+			</div>
+			<div class="img-text-container">
+				<img src="../static/imagens/git.png" alt="Simbolo git" class="logos">
+				<p class="exp">
+					Git e GitHub
+				</p>
+			</div>
+			<div class="img-text-container">
+				<img src="../static/imagens/gnu.png" alt="Simbolo Gnu" class="logos">
+				<p class="exp">
+					Gnuplot 
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="../static/imagens/shell.png" alt="Simbolo shell" class="logos">
+				<p class="exp">
+					Shell 
+				</p>
+			</div>	
+			<div class="img-text-container">
+				<img src="../static/imagens/linux.png" alt="Simbolo Linux" class="logos">
+				<p class="exp">
+					Linux 
+				</p>
+			</div>				
+		</div>  
+	</h3>
+</div>
+
+<!-- scripts -->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "none") {
+      content.style.display = "block";
+    } else {
+      content.style.display = "none";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
