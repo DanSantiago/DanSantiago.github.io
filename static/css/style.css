@@ -197,14 +197,6 @@ h3 {
  .bot {
   top: 69%;
 }
-
-#bot1 {
-  left: 41.75%;
-}
-
-#bot3 {
-  left: 53.75%;
-}
 }
 
 @media screen and (max-width: 1250px) {
@@ -385,11 +377,11 @@ h3 {
  }
 
 #bot1 {
-  left: 40.75%;
+  left: 40%;
 }
 
 #bot3 {
-  left: 54.75%;
+  left: 55.5%;
 }
 }
 }
