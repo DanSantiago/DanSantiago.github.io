@@ -216,6 +216,14 @@ h3 {
   .bot {
     top: 66%;
   }
+	
+#bot1 {
+  left: 39.75%;
+}
+
+#bot3 {
+  left: 55.75%;
+}	
 }
 
 @media screen and (max-width: 920px) {
