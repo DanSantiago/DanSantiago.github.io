@@ -240,7 +240,15 @@ h3 {
   .bot:hover{
     height: 6.5%;
   }
+	
+#bot1 {
+  left: 41%;
+}
 
+#bot3 {
+  left: 54.5%;
+}
+	
   .logos {
     width: 40px;
     height: 40px;
