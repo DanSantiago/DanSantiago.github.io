@@ -17,8 +17,8 @@ O projeto foi desenvolvido para fins de treinamento inicial com o módulo flask 
 Basta baixar o arquivo compactado ("portfolio.zip") e rodar o arquivo "run.py", após isso, basta entrar no link que ele retornará.
 
 OBS: É necessário ter uma versão do Python instalada para a execução funcionar.
+
 OBS2: É necessário instalar os módulos utilizados antes de executar o algoritmo.
-OBS3: A versão mobile não funciona por hora.
 
 # Autor
 
