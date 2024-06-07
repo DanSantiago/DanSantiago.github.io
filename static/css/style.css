@@ -105,7 +105,7 @@ p {
 }
 
 #bot1 {
-  left: 42.75%;
+  left: 41.5%;
 }
 
 #bot2 {
@@ -113,7 +113,7 @@ p {
 }
 
 #bot3 {
-  left: 52.75%;
+  left: 54%;
 }
 
 /* divisões dos botões de alternância de página*/
@@ -215,15 +215,7 @@ h3 {
 
   .bot {
     top: 66%;
-  }
-	
-#bot1 {
-  left: 39.75%;
-}
-
-#bot3 {
-  left: 55.75%;
-}	
+  }	
 }
 
 @media screen and (max-width: 920px) {
