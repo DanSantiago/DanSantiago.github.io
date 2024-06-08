@@ -30,25 +30,68 @@ body {
   overflow: hidden;
 }
 
-/* texto central da página inicial*/
-#basico {
+ .container1 {
+  display: flex;
+  justify-content: center; 
+  align-items: end; 
+  height: 450px; 
+}
+
+.image {
+  height: 60%; /* Define a altura da imagem para ocupar 100% do container */
+  max-width: 100%; /* Mantém a proporção da imagem */
+}
+
+.container2 {
+  display: flex;
+  justify-content: center; 
+  align-items: end; 
+  height: 150px; 
+}
+
+.basic1 {
+  height: 50%;
+  max-width: 100%; /* Mantém a proporção da imagem */
   color: white;
   font-size: 20pt;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 52.5%;
-  text-align: center;  
- }
+  text-align: center; 
+}
 
-/* foto da página inicial */ 
-#perfil {
-  width: 15%;
-  height: 30%;
-  position: absolute;
-  top: 20%;
-  left: 42.5%;
- }
+.container3 {
+  display: flex;
+  justify-content: center; 
+  align-items: end; 
+  height: 25px; 
+}
+
+.basic2 {
+  height: 100%;
+  max-width: 100%; /* Mantém a proporção da imagem */
+  color: white;
+  font-size: 20pt;
+  text-align: center; 
+}
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  align-items: end; 
+  height: 80px; 
+  gap: 1%;
+}
+
+.bot {
+  height: 75px;
+  background-color: transparent;
+  border: none;
+  opacity: 0.7;
+}
+
+/* animação dos botões */
+.bot:hover{
+  opacity: 1;
+  height: 80px;
+}
 
 /* mudanças nos parágrafos*/
 p {
@@ -86,34 +129,6 @@ p {
   padding-left: 30px;
   border-left: 4px solid gray;
   color: gray;
-}
-
-/* detalhes dos botões da tela inicial */
-.bot {
-  width: 4%;
-  height: 8%;
-  position: absolute;
-  top: 72%;
-  opacity: 0.7;
-}
-
-/* animação dos botões */
-.bot:hover{
-  width: 4.5%;
-  height: 8.5%;
-  opacity: 1;
-}
-
-#bot1 {
-  left: 41.5%;
-}
-
-#bot2 {
-  left: 47.75%;
-}
-
-#bot3 {
-  left: 54%;
 }
 
 /* divisões dos botões de alternância de página*/
@@ -188,211 +203,47 @@ h3 {
 }
 
 /* corrigir layout para diferentes dimensões */
-@media screen and (max-width: 1800px) {
-  #perfil {
-  width: 20%;
-  left: 40%;
- }
-
- .bot {
-  top: 69%;
-}
-}
-
-@media screen and (max-width: 1250px) {
-  #perfil {
-    width: 25%;
-    left: 37.5%;
-   }
-
-  .bot {
-    top: 66%;
-  }	
-}
-
-@media screen and (max-width: 920px) {
-  #basico {
-    font-size: 17px;
-  }
-
-  .guia {
-    font-size: 17px;
+@media screen and (max-width: 1100px) {
+  .container1 {
+    height: 350px; 
   }
   
-  .collapsible {
-    font-size: 17px;
-    padding: 13px;
+  .container2 {
+    height: 250px; 
   }
-
-  .sub {
-    font-size: 16px;
+  
+  .container3 {
+    height: 50px; 
   }
-
-  .exp {
-    font-size: 14px;
+  
+  .container4 {
+    height: 60px; 
   }
-
+  
   .bot {
-    top: 70%;
-    height: 6%;
+    height: 60px;
   }
   
   .bot:hover{
-    height: 6.5%;
+    height: 65px;
   }
-	
-#bot1 {
-  left: 41%;
 }
 
-#bot3 {
-  left: 54.5%;
-}
-	
-  .logos {
-    width: 40px;
-    height: 40px;
-  }
-
-#perfil {
-  width: 30%;
-  height: 20%;
-  top: 30%;
-  left: 35%;
- }
-}
-
-@media screen and (max-width: 768px) {
-  #basico {
-    font-size: 14px;
-  }
-
-  .guia {
-    font-size: 14px;
-  }
-
-  .collapsible {
-    font-size: 14px;
-    padding: 10px;
-  }
- 
-  .sub {
-    font-size: 13px;
-  }
-
-  .exp {
-    font-size: 12px;
-  }
-
-  .bot {
-    top: 65%;
-    height: 5%;
-  }
-
-  .bot:hover{
-    height: 5.5%;
-  }
-
-  .logos {
-    width: 35px;
-    height: 35px;
-  }
-
-#perfil {
-  width: 35%;
-  left: 32.5%;
- }
-
-}
-
-@media screen and (max-width: 500px) {
-  #basico {
-    font-size: 12px;
-  }
-
-  .guia {
-    font-size: 12px;
-  }
-
-  .collapsible {
-    font-size: 12px;
-    padding: 8px;
-  }
-
-  .sub {
-    font-size: 11px;
-  }
-
-  .bot {
-    top: 63%;
+@media screen and (max-width: 550px) {
+  .container2 {
+    height: 350px; 
   }
   
-  .exp {
-    font-size: 10px;
+  .container3 {
+    height: 100px; 
   }
-
-  .logos {
-    width: 30px;
-    height: 30px;
-  }
-
-#perfil {
-  width: 30%;
-  left: 35%;
- }
 
 }
 
 @media screen and (max-width: 350px) {
-  #basico {
-    font-size: 8px;
+ 
+  .container2 {
+    height: 500px; 
   }
 
-  .guia {
-    font-size: 8px;
-  }
-
-  .bot {
-    top: 60%;
-    height: 4%;
-  }
-
-  .bot:hover {
-    height: 4.5%;
-  }
-
-  .collapsible {
-    font-size: 8px;
-    padding: 4px;
-  }
-
-  .sub {
-    font-size: 7px;
-  }
-
-  .exp {
-    font-size: 6px;
-  }
-
-  .logos {
-    width: 25px;
-    height: 25px;
-  }
-
-#perfil {
-  height: 15%;
-  top: 35%
- }
-
-#bot1 {
-  left: 40%;
 }
-
-#bot3 {
-  left: 55.5%;
-}
-}
-}
-
-
-
