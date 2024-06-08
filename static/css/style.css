@@ -20,14 +20,9 @@ html,body{
 	background:#201c1c;
 }
 
-div.wrap {
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
   font-family: 'Courier New', Courier, monospace, sans-serif;
-  overflow: hidden;
+  overflow: auto;
 }
 
  .container1 {
